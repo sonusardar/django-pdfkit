@@ -1,0 +1,3 @@
+install django
+install pdfkit - https://pypi.org/project/pdfkit/
+install wkhtmltopdf - https://wkhtmltopdf.org/

@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+
+    
+    
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="mt-4"> 
+            <h1 class="text-center" style="font-family:  serif;font-size: 3rem; ">Lorem ipsum dolor sit amet.</h1>
+           
+            <p class="my-0 text-center" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maxime ad adipisci deserunt atque exercitationem. </p>
+            <p class="my-0 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+          <hr>
+
+
+          <table class="mt-5 table table-striped">
+              <thead>
+                <tr>
+                  <th>name</th>
+                  <th>Course</th>
+                  <th>price</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for data in datass %}
+                <tr>
+                  <th>{{data.name}}</th>
+                  <th>{{data.course}}</th>
+                  <th>{{data.price}}</th>
+                </tr>
+                {% endfor %}
+
+              </tbody>         
+          
+           </table>
+           <p id="as"></p>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('as').innerHTML = "i am  java script"
+    </script>
+    
+  </body>
+</html>
